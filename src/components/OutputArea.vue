@@ -55,7 +55,7 @@ export default {
       DEPARTMENT_TABLE: DEPARTMENT_TABLE,
       sortSwitch: true,
     };
-  },
+  } /*
   watch: {
     result_datas: function () {
       console.log(this.result_datas);
@@ -74,7 +74,7 @@ export default {
     console.log("created");
     console.log(this.ALL_FIELD_LIST);
     console.log(this.result_datas, this.sortSwitch);
-  },
+  },*/,
   computed: {
     rateOrderDatas() {
       return this.result_datas.slice().sort((a, b) => b.result.rate - a.result.rate);

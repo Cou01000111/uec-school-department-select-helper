@@ -22,6 +22,7 @@
           </v-col>
         </v-row>
       </v-container>
+      <v-checkbox label="test"></v-checkbox>
     </v-main>
   </v-app>
 </template>
