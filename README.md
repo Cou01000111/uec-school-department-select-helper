@@ -1,4 +1,4 @@
-# uec_department_selector
+# uec-school-department-select-helper
 
 ## Project setup
 ```
