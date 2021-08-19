@@ -28,8 +28,18 @@
         }}
       </v-card-title>
       <v-card-text>
-        一致率: {{ Math.round(result_data.result.rate * 100) }}% , 一致数:
-        {{ result_data.result.count }}/{{ result_data.result.all }}
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <span v-bind="attrs" v-on="on"
+              >一致率: {{ Math.round(result_data.result.rate * 100) }}%
+            </span>
+          </template>
+          <span>
+            選択された学びたい分野、学びたくない分野と学科（コース）で学べること、学ばないことの一致率
+          </span>
+        </v-tooltip>
+        <span>,</span>
+        <span>一致数: {{ result_data.result.count }}/{{ result_data.result.all }}</span>
       </v-card-text>
       <v-chip
         class="ma-2"

@@ -2,12 +2,13 @@
   <v-app v-model="theme">
     <v-app-bar app color="primary">
       <div class="d-flex align-center">
-        <span color="white">UEC school/department select helper</span>
+        <span style="color: white">UEC school/department select helper</span>
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-switch label="theme" v-model="theme" class="mr-2"></v-switch>
+      <v-btn @click="theme = !theme" class="mx-2" icon small color="white">
+        <v-icon> mdi-invert-colors </v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-main>
