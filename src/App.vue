@@ -6,7 +6,7 @@
       </div>
 
       <v-spacer></v-spacer>
-      <v-btn @click="theme = !theme" class="mx-2" icon small color="white">
+      <v-btn @click="changeColor" class="mx-2" icon small color="white">
         <v-icon> mdi-invert-colors </v-icon>
       </v-btn>
     </v-app-bar>
@@ -78,11 +78,20 @@ export default {
       });
       this.result = _result;
     },
+    changeColor: function () {
+      this.theme = !this.theme;
+      localStorage.setItem("uec_department_select_helper", this.theme);
+    },
   },
   watch: {
     theme() {
       this.$vuetify.theme.dark = this.theme;
     },
+  },
+  created() {
+    var theme = localStorage.getItem("uec_department_select_helper");
+    console.log(theme);
+    if (theme) this.theme = theme == "true";
   },
 };
 </script>
