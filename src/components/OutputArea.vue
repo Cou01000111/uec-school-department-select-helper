@@ -87,10 +87,21 @@ export default {
   },*/,
   computed: {
     rateOrderDatas() {
+      console.log(
+        this.result_datas
+          .slice()
+          .sort((a, b) => b.result.rate - a.result.rate)
+          .map((obj) => obj.result.rate)
+      );
       return this.result_datas.slice().sort((a, b) => b.result.rate - a.result.rate);
-      //return this.result_datas.slice().reverse();
     },
     countOrderDatas() {
+      console.log(
+        this.result_datas
+          .slice()
+          .sort((a, b) => b.result.count - a.result.count)
+          .map((obj) => obj.result.count)
+      );
       return this.result_datas.slice().sort((a, b) => b.result.count - a.result.count);
     },
   },
