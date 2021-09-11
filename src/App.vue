@@ -24,6 +24,7 @@
         </v-row>
       </v-container>
     </v-main>
+    <v-footer v-bind:fixed="true"> v1.0.1<v-spacer></v-spacer> 2021 - kamiya cou</v-footer>
   </v-app>
 </template>
 

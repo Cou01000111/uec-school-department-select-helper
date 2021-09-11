@@ -8,7 +8,7 @@
       :label="sortSwitch ? '一致率順' : '一致数順'"
     />
     <v-card
-      v-for="result_data in sortSwitch ? countOrderDatas : rateOrderDatas"
+      v-for="result_data in sortSwitch ? rateOrderDatas : countOrderDatas"
       :key="result_data.departmentName"
       elevation="2"
       class="o-area mx-auto mb-1"
