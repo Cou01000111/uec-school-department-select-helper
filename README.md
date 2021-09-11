@@ -1,24 +1,5 @@
 # uec-school-department-select-helper
 
-## Project setup
-```
-yarn install
-```
+## GitHub Pages
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://cou01000111.github.io/uec-school-department-select-helper/
