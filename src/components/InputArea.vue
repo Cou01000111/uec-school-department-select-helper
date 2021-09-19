@@ -52,3 +52,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.v-input__slot {
+  margin: 0;
+}
+</style>
