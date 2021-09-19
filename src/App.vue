@@ -24,7 +24,9 @@
         </v-row>
       </v-container>
     </v-main>
-    <v-footer v-bind:fixed="true"> v1.1.2<v-spacer></v-spacer> 2021 - kamiya cou</v-footer>
+    <v-footer v-bind:fixed="true">
+      v1.1.3<v-spacer></v-spacer> 2021 - kamiya cou</v-footer
+    >
   </v-app>
 </template>
 
@@ -70,11 +72,15 @@ export default {
             departmentList.bitList[bitListIndex] ^ selectedBitList[bitListIndex]
           );
           _result[index].result.count +=
-            departmentList.bitList[bitListIndex] & selectedBitList[bitListIndex];
-          if (departmentList.bitList[bitListIndex] & selectedBitList[bitListIndex])
+            departmentList.bitList[bitListIndex] &
+            selectedBitList[bitListIndex];
+          if (
+            departmentList.bitList[bitListIndex] & selectedBitList[bitListIndex]
+          )
             _result[index].result.matchedFieldIndexes.push(bitListIndex);
         });
-        _result[index].result.rate = _result[index].result.rate / departmentList.bitList.length;
+        _result[index].result.rate =
+          _result[index].result.rate / departmentList.bitList.length;
       });
       this.result = _result;
     },
