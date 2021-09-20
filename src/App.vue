@@ -2,7 +2,8 @@
   <v-app v-model="theme">
     <v-app-bar app color="primary">
       <div class="d-flex align-center">
-        <span style="color: white">UEC school/department select helper</span>
+        <img src="./UEC_DSH.png" alt="logo" />
+        <span style="color: white"> UEC school/department select helper</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -101,3 +102,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+img {
+  margin-right: 20px;
+}
+</style>
