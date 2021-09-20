@@ -2,10 +2,8 @@
   <v-app v-model="theme">
     <v-app-bar app color="primary">
       <div class="d-flex align-center">
-        <img src="./UEC_DSH.png" alt="logo" />
-        <span style="color: white">
-          UEC_DSH(school/department select helper)</span
-        >
+        <!--<img src="./UEC_DSH.png" alt="logo" />-->
+        <span style="color: white"> UEC SDH</span>
       </div>
 
       <v-spacer></v-spacer>
