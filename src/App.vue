@@ -3,7 +3,9 @@
     <v-app-bar app color="primary">
       <div class="d-flex align-center">
         <img src="./UEC_DSH.png" alt="logo" />
-        <span style="color: white"> UEC school/department select helper</span>
+        <span style="color: white">
+          UEC_DSH(school/department select helper)</span
+        >
       </div>
 
       <v-spacer></v-spacer>
@@ -26,7 +28,7 @@
       </v-container>
     </v-main>
     <v-footer v-bind:fixed="true">
-      v1.1.5<v-spacer></v-spacer> 2021 - kamiya cou</v-footer
+      v{{ version }}<v-spacer></v-spacer> 2021 - kamiya cou</v-footer
     >
   </v-app>
 </template>
@@ -35,6 +37,7 @@
 import InputArea from "./components/InputArea";
 import OutputArea from "./components/OutputArea";
 import { ALL_FIELD_LIST, DEPARTMENT_TABLE } from "./fieldTable.js";
+import package_json from "../package.json";
 
 export default {
   name: "App",
@@ -47,6 +50,7 @@ export default {
       fieldList: ALL_FIELD_LIST,
       result: [],
       theme: true,
+      version: package_json.version,
     };
   },
   methods: {
