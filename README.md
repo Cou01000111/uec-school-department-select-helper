@@ -2,4 +2,4 @@
 
 ## GitHub Pages
 
-https://cou01000111.github.io/uec-school-department-select-helper/
+https://cou723.github.io/uec-school-department-select-helper/
